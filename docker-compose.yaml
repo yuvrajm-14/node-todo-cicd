@@ -4,4 +4,8 @@ services:
   web:
     image: trainwithshubham/node-app:latest
     ports:
-      - "8000:8000"
+      - "5000:5000"
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: npm start
